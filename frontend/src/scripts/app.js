@@ -13,18 +13,6 @@
 	let   openedChats = 0;
 	let   botMsgCount = 0;
 
-	// const Chat = () => {
-	// 	constructor(chatId, counter, lastMessage) {
-	// 		this.chatId = chatId
-	// 		this.counter = counter;
-	// 		this.lastMessage = lastMessage;
-	// 	}
-
-	// 	saveMessages() {
-
-	// 	}
-	// };
-
 
 	// App
 	const app = {};
@@ -34,7 +22,11 @@
 	app.chatTemplate = (id) => {
 		let template = `
 			<section class="chat" data-id="${id}">
-				<header class="chat__title title">Chat ${id}</header>
+				<header class="chat__title title">
+					Chat ${id}
+
+					<button class="close" data-id="${id}">x</button>
+				</header>
 
 				<div class="chat__container">
 					<ul class="chat-list">
@@ -70,6 +62,7 @@
 
 			chatHolder.insertAdjacentHTML('beforeend', app.chatTemplate(chatId));
 			app.startMessage();
+			app.chatClose(chatId);
 		});
 	};
 
@@ -80,6 +73,18 @@
 		let messageTemplate = `<li class="chat-list__item ${user}">${message}</li>`;
 		lastMessage = message;
 		chatList.insertAdjacentHTML('beforeend', messageTemplate);
+	};
+
+	// Close chat
+	app.chatClose = (id) => {
+		const closeButton = document.querySelector(`.close[data-id="${id}"]`);
+		const chatEl = document.querySelector(`.chat[data-id="${id}"]`);
+
+		closeButton.addEventListener('click', (e) => {
+			e.preventDefault();
+
+			chatEl.outerHTML = '';
+		});
 	};
 
 

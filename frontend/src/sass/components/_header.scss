@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 .header {
+	@include breakpoint(750px, 'max') { height: 40px; }
 	background-color: #ee0979;
 	background: linear-gradient(to right, #ee0979, #ff6a00);
 	box-shadow: 0 1px 5px rgba(53, 53, 53, 0.534);

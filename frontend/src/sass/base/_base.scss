@@ -5,6 +5,7 @@
 
 html,
 body {
+	@include breakpoint(750px, 'max') { font-size: 8px; }
 	background-color: #fdfbfb;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 12px;

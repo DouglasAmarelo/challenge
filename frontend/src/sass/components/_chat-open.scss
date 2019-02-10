@@ -7,14 +7,15 @@
 	background: linear-gradient(to bottom, #ee0979, #ff6a00);
 	border-radius: 50%;
 	border: none;
-	bottom: 75px;
+	bottom: 15px;
 	color: transparent;
 	cursor: pointer;
 	font-size: 0;
 	height: 58px;
-	right: 25px;
+	right: 15px;
 	position: fixed;
 	width: 58px;
+	z-index: 10;
 
 	&:focus { outline: none; }
 
