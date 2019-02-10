@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+// Base
+* { box-sizing: border-box; }
+
+html,
+body {
+	background-color: #fdfbfb;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}

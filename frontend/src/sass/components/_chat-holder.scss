@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+// Chat holder
+.chat-holder {
+	align-items: flex-end;
+	background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	min-height: 100%;
+	padding-bottom: 50px;
+	padding-right: 100px;
+	padding-top: 60px;
+	position: relative;
+}

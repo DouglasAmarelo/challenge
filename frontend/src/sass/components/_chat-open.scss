@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+
+// Chat holder
+.chat-open {
+	animation: iconFloat 1.2s linear alternate infinite;
+	background-color: #fff;
+	background: linear-gradient(to bottom, #ee0979, #ff6a00);
+	border-radius: 50%;
+	border: none;
+	bottom: 75px;
+	color: transparent;
+	cursor: pointer;
+	font-size: 0;
+	height: 58px;
+	right: 25px;
+	position: fixed;
+	width: 58px;
+
+	&:focus { outline: none; }
+
+	&:before {
+		background-color: #fc5d0f;
+		border-radius: 5px 5px 5px 0;
+		bottom: 1px;
+		content: '';
+		height: 7px;
+		left: 5px;
+		position: absolute;
+		transform: rotate(25deg) skewX(0deg);
+		width: 8px;
+		z-index: -1;
+	}
+
+	// SVG icon
+	.icon {
+		display: block;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+
+		path,
+		circle { fill: #fff; }
+	}
+}
+
+// Animations
+@keyframes iconFloat {
+	0% {
+		box-shadow: 0 20px 40px rgba(82, 82, 82, 0.5);
+		transform: translateY(-3px);
+	}
+	100% {
+		box-shadow: 0 10px 10px darken(rgba(82, 82, 82, 0.5), 5%);;
+		transform: translateY(3px);
+	}
+}

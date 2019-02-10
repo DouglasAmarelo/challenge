@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+
+// Loader
+$tamanho: 10px;
+$tempo: .7s;
+
+.loader {
+	left: 1em;
+	opacity: 0;
+	position: absolute;
+	top: 2px;
+	width: 50px;
+}
+
+.point {
+	background-color: #505050;
+	position: relative;
+	animation: loadingg $tempo ease-in-out infinite alternate;
+	border-radius: 50%;
+	bottom: 0;
+	display: inline-block;
+	position: absolute;
+	height: $tamanho;
+	width: $tamanho;
+
+	&.is--01 {
+		animation-delay: $tempo / 3 * 1;
+		background-color: #505050;
+		left: 0;
+	}
+
+	&.is--02 {
+		animation-delay: $tempo / 3 * 2;
+		background-color: #505050;
+		left: calc(50% - #{$tamanho} /2);
+	}
+
+	&.is--03 {
+		animation-delay: $tempo / 3 * 3;
+		background-color: #505050;
+		right: 0;
+	}
+}
+
+
+
+@keyframes loadingg {
+	0% {
+	transform: translateY(0);
+	}
+	100% {
+		transform: translateY(- $tamanho);
+	}
+}
