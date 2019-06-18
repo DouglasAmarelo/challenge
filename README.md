@@ -1,8 +1,8 @@
 <h1 align="center">Welcome to Creditas Front-end Challenge 👋</h1>
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://twitter.com/@DouglasAmarelo">
-    <img alt="Twitter: @DouglasAmarelo" src="https://img.shields.io/twitter/follow/@DouglasAmarelo.svg?style=social" target="_blank" />
+  <a href="https://twitter.com/DouglasAmarelo">
+    <img alt="Twitter: @DouglasAmarelo" src="https://img.shields.io/twitter/follow/DouglasAmarelo.svg?style=social" target="_blank" />
   </a>
 </p>
 
@@ -24,8 +24,8 @@ gulp
 
 👤 **Douglas &#34;Amarelo&#34; Lopes**
 
-* Twitter: [@@DouglasAmarelo](https://twitter.com/@DouglasAmarelo)
-* Github: [@@DouglasAmarelo](https://github.com/@DouglasAmarelo)
+* Twitter: [@DouglasAmarelo](https://twitter.com/DouglasAmarelo)
+* Github: [@DouglasAmarelo](https://github.com/DouglasAmarelo)
 
 ## Show your support
 
